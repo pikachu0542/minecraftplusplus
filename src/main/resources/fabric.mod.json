@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraftplusplus",
+	"version": "${version}",
+	"name": "MinecraftPlusPlus",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minecraftplusplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pikachu.minecraftplusplus.MinecraftPlusPlus"
+		],
+		"client": [
+			"pikachu.minecraftplusplus.client.MinecraftPlusPlusClient"
+		],
+		"fabric-datagen": [
+			"pikachu.minecraftplusplus.client.MinecraftPlusPlusDataGenerator"
+		]
+	},
+	"mixins": [
+		"minecraftplusplus.mixins.json",
+		{
+			"config": "minecraftplusplus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

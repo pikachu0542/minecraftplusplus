@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "statistics_root": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraftplusplus:gui/advancements/backgrounds/diamond_block",
+    "description": "Number go up!",
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "show_toast": false,
+    "title": "Statistics"
+  },
+  "requirements": [
+    [
+      "statistics_root"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
