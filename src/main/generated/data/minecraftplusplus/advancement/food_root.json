@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "food_root": {
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraftplusplus:gui/advancements/backgrounds/hay_block_side",
+    "description": "Tasty snack!",
+    "icon": {
+      "id": "minecraft:paper"
+    },
+    "show_toast": false,
+    "title": "Food"
+  },
+  "requirements": [
+    [
+      "food_root"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
